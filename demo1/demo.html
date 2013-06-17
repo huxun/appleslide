@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Apple-like Slideshow Gallery | Tutorialzine demo</title>
+<style>
+body,h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
+	/* Page reset */
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	/* Setting default text color, background and a font stack */
+	color:#444444;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#gallery{
+
+	
+	/* The width of the gallery */
+	width:920px;
+	margin:0 auto;
+	position:relative;
+	padding-bottom:20px;
+}
+ul{
+	margin:0px;
+	padding:0px;
+}
+
+a img{
+	border:none;
+}
+
+
+/* The styles below are only necessary for the demo page */
+
+h1{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+	font-size:36px;
+	font-weight:normal;
+	margin-bottom:15px;
+}
+
+h2{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	position:absolute;
+	right:0;
+	text-transform:uppercase;
+	top:15px;
+}
+a img{
+	border:none;
+}
+
+
+/* The styles below are only necessary for the demo page */
+
+
+
+#main{
+	/* The main container */
+	text-align:center;
+	position:relative;
+	overflow:hidden;
+}
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="carousel.css" />
+
+<script type="text/javascript" src="jquery.1.8.2.min.js"></script>
+<script type="text/javascript" src="jquery.carousel.js"></script>
+
+<!--[if lte IE 7]>
+<style type="text/css">
+ul li{
+	display:inline;
+	/*float:left;*/
+}
+</style>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="main">
+
+  <h1>Apple-like Slideshow Gallery</h1>
+  
+  <h2>View the <a href="http://tutorialzine.com/2009/10/beautiful-apple-gallery-slideshow/" target="_blank">original tutorial &raquo;</a></h2>
+  
+  
+  <div id="gallery">
+	
+    <div id="slides">
+		<div class="slide"><img src="img/sample_slides/macbook.jpg" width="920" height="400" alt="side" /></div>
+		<div class="slide"><img src="img/sample_slides/iphone.jpg" width="920" height="400" alt="side" /></div>
+		<div class="slide"><img src="img/sample_slides/imac.jpg" width="920" height="400" alt="side" /></div>
+		<div class="slide"><img src="img/sample_slides/info.jpg" width="920" height="400" alt="side" /></div>
+    </div>
+	
+	<nav class="dot-nav">
+		<ul>
+			<li class="menu-Item"><a class="hero-gallery" href="#gallery-hero">Gallery: iPhone 5</a></li>
+			<li class="menu-Item"><a class="hero-gallery" href="#gallery-design">Gallery: iPhone 5</a></li>
+			<li class="menu-Item"><a class="hero-gallery" href="#gallery-display">Gallery: iPhone 5</a></li>
+			<li class="menu-Item"><a class="hero-gallery" href="#gallery-wireless">Gallery: iPhone 5</a></li>
+		</ul>
+	</nav>
+	
+	<nav class="paddle-nav">
+		<ul>
+			<li><a class="arrow prev hero-gallery" href="#previous"><b>Previous</b></a></li>
+			<li><a class="arrow next hero-gallery" href="#next"><b>Next</b></a></li>
+		</ul>
+	</nav>
+
+  </div>
+    
+</div>
+    
+</body>
+</html>
